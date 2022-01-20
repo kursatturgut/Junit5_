@@ -51,24 +51,24 @@ public class J01_Assertions {
         assertNotNull(olusan);//passed
 
     }
+
     @Test
     @DisplayName("ToContain test")
-    void testToContain(){
+    void testToContain() {
 
-        boolean olusan="mustafa".contains("hi");//false
-        boolean beklenen=false;
-        assertEquals(olusan, beklenen,"strin degeri barındırmaz");
+        boolean olusan = "mustafa".contains("hi");//false
+        boolean beklenen = false;
+        assertEquals(olusan, beklenen, "strin degeri barındırmaz");
     }
+
     @Test
     @DisplayName("arrays test")
-    void testArray(){
-        String str="javacanlara selam olsun ayagınza das degmesin";
-        String olusan[]=str.split(" ");
-        String  beklenen[]= {"javacanlara", "selam", "olsun", "ayagınza", "das", "degmesin"};
-        assertArrayEquals(beklenen,olusan,"agam arraylerin farklı");//passed
-       assertArrayEquals(beklenen,olusan,"agam arraylerin farklı");//failed-->array contents differ at index [1], expected: <sela> but was: <selam>
-
-
+    void testArray() {
+        String str = "javacanlara selam olsun ayagınza das degmesin";
+        String olusan[] = str.split(" ");
+        String beklenen[] = {"javacanlara", "selam", "olsun", "ayagınza", "das", "degmesin"};
+        assertArrayEquals(beklenen, olusan, "agam arraylerin farklı");//passed
+        assertArrayEquals(beklenen, olusan, "agam arraylerin farklı");//failed-->array contents differ at index [1], expected: <sela> but was: <selam>
 
     }
 
